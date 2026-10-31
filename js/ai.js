@@ -1,5 +1,5 @@
 // Тек әзірлеуші өзгертеді. Жаңа Worker жарияланған соң нақты HTTPS URL енгізіңіз.
-const AI_API_URL = "ЖАҢА_CLOUDFLARE_WORKER_URL";
+const AI_API_URL = "https://withered-rice-14ef.vp5vy7g7db.workers.dev";
 export async function askAI(payload) {
   if (!AI_API_URL.startsWith('https://')) throw new Error('ЖИ қызметі әзірге іске қосылмаған. Кейінірек қайталап көріңіз.');
   const controller = new AbortController();
