@@ -1,1 +1,1211 @@
-<!doctype html><html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173e36"><meta name="description" content="ERKETAI AI — 5-сынып оқушыларының қазақша ауызша сөйлеуін дамытуға арналған қуыршақ театры платформасы"><title>Басты бет · ERKETAI AI</title><link rel="stylesheet" href="styles.css"></head><body data-page="index"><aside class="sidebar"><a class="brand" href="index.html"><span class="brandmark">е</span><span>ERKETAI <i>AI</i><small>Қуыршақтан еркін сөйлеуге</small></span></a><span class="nav-label">МЕНІҢ КЕҢІСТІГІМ</span><nav aria-label="Негізгі навигация"><a href="index.html" aria-current="page"><span>⌂</span>Басты бет</a><a href="student.html" ><span>◈</span>Оқушы кеңістігі</a><a href="plays.html" ><span>▣</span>Қойылымдар</a><a href="ai.html" ><span>✦</span>ЖИ шеберханасы</a><a href="teacher.html" ><span>▤</span>Мұғалім кабинеті</a><a href="parents.html" ><span>♡</span>Ата-анаға</a><a href="results.html" ><span>▥</span>Нәтижелер</a><a href="media.html" ><span>▷</span>Театр мұрағаты</a></nav><div class="side-note"><span>✦</span><strong>Әр дауыс — ерекше.</strong><p>Кішкентай қадамнан баста.</p></div><div class="author">Жоба авторы<br><strong>Казиханова Әсел Ескендірқызы</strong></div></aside><div class="shell"><header><span>ТІЛ · ТЕАТР · ТҰЛҒА</span><div><span class="badge">5-сынып</span><span class="avatar">Е</span></div></header><main><div class="pagehead"><div><span class="eyebrow">ERKETAI / ОҚУ КЕҢІСТІГІ</span><h2>Басты бет</h2></div><span class="page-number">01 / 08</span></div><div class="hero"><div><span class="eyebrow">ҚАЗАҚ ТІЛІ · 5-СЫНЫП · ҚУЫРШАҚ ТЕАТРЫ</span><h1>Кішкентай сахна.<br><em>Үлкен сенім.</em></h1><p>Кейіпкерді таңда. Ойыңды құрастыр.<br>Өз даусыңмен еркін сөйле.</p><div class="actions"><a class="button" href="student.html">Жаттығуды бастау ↗</a><a class="button light" href="plays.html">Қойылым таңдау</a></div></div><div class="stage" aria-label="Қуыршақ театрының иллюстрациясы"><div class="stage-title">ERKETAI ТЕАТРЫ</div><div class="curtain left"></div><div class="curtain right"></div><div class="stars">✧ &nbsp; ✦ &nbsp; ✧</div><div class="puppet p1"><span>🌷</span><b>●</b><i></i></div><div class="puppet p2"><span>🌿</span><b>●</b><i></i></div><div class="stage-floor"></div><div class="stage-caption">Сенің даусың маңызды</div></div></div><div class="sectionhead"><h2>Еркін сөйлеуге 5 қадам</h2><span>ERKETAI 5Q әдісі</span></div><div class="steps"><a href="teacher.html"><small>01</small><strong>Қиындық</strong><span>Қолдау бағытын тап</span></a><a href="plays.html"><small>02</small><strong>Қуыршақ</strong><span>Кейіпкеріңді таңда</span></a><a href="ai.html"><small>03</small><strong>Құрастыру</strong><span>Ойыңды жинақта</span></a><a href="student.html"><small>04</small><strong>Қойылым</strong><span>Диалогке қосыл</span></a><a href="results.html"><small>05</small><strong>Қорытынды</strong><span>Өзгерісті байқа</span></a></div><div class="grid three"><article class="card"><span class="icon">◈</span><h3>Оқушыға</h3><p>Қысқа жаттығулар, рөлдік диалог және рефлексия.</p><a class="textlink" href="student.html">Ашу ↗</a></article><article class="card"><span class="icon">▤</span><h3>Мұғалімге</h3><p>Диагностика, тапсырма құрастыру және 15 балдық бағалау.</p><a class="textlink" href="teacher.html">Ашу ↗</a></article><article class="card"><span class="icon">♡</span><h3>Ата-анаға</h3><p>Үйде 5 минуттық әңгіме және жылы қолдау.</p><a class="textlink" href="parents.html">Ашу ↗</a></article></div></main><footer>ERKETAI AI · Қазақ тілі мен әдебиеті · Алатау қаласы<span>Өз ойың. Өз даусың.</span></footer></div><script type="module" src="js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta name="theme-color" content="#173e36">
+
+  <meta
+    name="description"
+    content="ERKETAI AI — қуыршақ театры арқылы қазақша еркін сөйлеуді дамытатын білім беру платформасы."
+  >
+
+  <title>ERKETAI AI — Басты бет</title>
+
+  <style>
+    @import url(
+      'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap'
+    );
+
+    :root {
+      --background: #f5f5ef;
+      --surface: #ffffff;
+      --ink: #203d36;
+      --green: #245548;
+      --green-dark: #173e36;
+      --muted: #718077;
+      --border: #e0e5db;
+      --lime: #ddebaf;
+      --sage: #e8eddd;
+      --sidebar-width: 250px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--background);
+      font-family: "Manrope", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #91aa61;
+      outline-offset: 5px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      padding: 12px 18px;
+      color: white;
+      background: var(--green-dark);
+      border-radius: 10px;
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    /* СОЛ ЖАҚ НАВИГАЦИЯ */
+
+    .sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      width: var(--sidebar-width);
+      padding: 28px 18px 20px;
+      overflow-y: auto;
+      background: #fcfdf8;
+      border-right: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 0 4px;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      width: 46px;
+      height: 46px;
+      color: var(--lime);
+      background: var(--green);
+      border-radius: 15px;
+      font-family: Georgia, serif;
+      font-size: 43px;
+      line-height: 1;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      white-space: nowrap;
+    }
+
+    .brand-ai {
+      display: inline-block;
+      margin-left: 3px;
+      padding: 2px 5px;
+      vertical-align: middle;
+      color: var(--green-dark);
+      background: var(--lime);
+      border-radius: 5px;
+      font-size: 10px;
+      letter-spacing: 0;
+    }
+
+    .brand-caption {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    .nav-label {
+      margin: 34px 12px 13px;
+      color: #8b978e;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+    }
+
+    .navigation {
+      display: grid;
+      gap: 6px;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 45px;
+      padding: 10px 13px;
+      border-radius: 11px;
+      font-size: 12px;
+      font-weight: 700;
+      transition:
+        background 180ms ease,
+        color 180ms ease;
+    }
+
+    .nav-link:hover {
+      background: #edf1e3;
+    }
+
+    .nav-link[aria-current="page"] {
+      color: white;
+      background: var(--green);
+    }
+
+    .nav-icon {
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      width: 23px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .sidebar-note {
+      margin-top: 26px;
+      padding: 16px;
+      background: #eff3e2;
+      border: 1px solid #dde5ce;
+      border-radius: 14px;
+    }
+
+    .sidebar-note-icon {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 24px;
+    }
+
+    .sidebar-note strong {
+      font-size: 12px;
+    }
+
+    .sidebar-note p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .author {
+      margin-top: auto;
+      padding: 23px 5px 0;
+      color: var(--muted);
+      font-size: 9px;
+      line-height: 1.8;
+    }
+
+    .author strong {
+      display: block;
+      color: #53695d;
+      font-weight: 600;
+    }
+
+    /* НЕГІЗГІ АЙМАҚ */
+
+    .shell {
+      margin-left: var(--sidebar-width);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      padding: 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-caption {
+      color: #7a897f;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .grade {
+      padding: 5px 12px;
+      color: #64766a;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-size: 10px;
+    }
+
+    .avatar {
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      color: var(--green);
+      background: #e6ecd8;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    main {
+      max-width: 1510px;
+      margin: 0 auto;
+      padding: 25px 32px;
+    }
+
+    .page-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow {
+      display: block;
+      color: #718474;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 1.7px;
+    }
+
+    .page-title {
+      margin: 5px 0 0;
+      font-size: 21px;
+      line-height: 1.3;
+      letter-spacing: -0.7px;
+    }
+
+    .page-number {
+      color: #8b978e;
+      font-size: 10px;
+      white-space: nowrap;
+    }
+
+    /* БАСТЫ БАННЕР */
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1.08fr;
+      align-items: center;
+      gap: 8px;
+      overflow: hidden;
+      background: var(--sage);
+      border: 1px solid #e0e6d2;
+      border-radius: 23px;
+    }
+
+    .hero-copy {
+      padding: 30px 0 30px 30px;
+    }
+
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 9px;
+      color: #60734e;
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      border-radius: 20px;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+    }
+
+    .hero-label::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: #809b55;
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      margin: 16px 0 13px;
+      font-size: clamp(30px, 3.15vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1.8px;
+    }
+
+    .hero h1 em {
+      color: #718755;
+      font-style: normal;
+    }
+
+    .hero-description {
+      max-width: 340px;
+      margin: 0;
+      color: #65765f;
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 21px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 43px;
+      padding: 11px 15px;
+      color: white;
+      background: var(--green);
+      border: 1px solid transparent;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 800;
+      transition:
+        background 180ms ease,
+        transform 180ms ease;
+    }
+
+    .button:hover {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      color: var(--green);
+      background: rgba(255, 255, 255, 0.88);
+      border-color: rgba(36, 85, 72, 0.08);
+    }
+
+    .button-secondary:hover {
+      color: var(--green-dark);
+      background: white;
+    }
+
+    /* ЖАҢА ТЕАТР СУРЕТІ */
+
+    .theatre-art {
+      position: relative;
+      min-width: 0;
+      margin: 20px;
+      overflow: hidden;
+      background: var(--green-dark);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 18px;
+      box-shadow:
+        0 16px 32px rgba(23, 62, 54, 0.16),
+        0 3px 8px rgba(23, 62, 54, 0.08);
+    }
+
+    .theatre-art img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+
+    .theatre-art figcaption {
+      position: absolute;
+      inset: auto 0 0;
+      display: grid;
+      gap: 4px;
+      padding: 38px 18px 16px;
+      color: #fff9e9;
+      background: linear-gradient(
+        transparent,
+        rgba(12, 34, 26, 0.9)
+      );
+    }
+
+    .theatre-art-label {
+      color: #e6d5a4;
+      font-size: 8px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .theatre-art figcaption strong {
+      font-size: clamp(11px, 1.1vw, 15px);
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    /* 5Q КЕЗЕҢДЕРІ */
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 22px 0 12px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .section-heading > span {
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .step {
+      position: relative;
+      display: block;
+      min-width: 0;
+      padding: 14px;
+      border-right: 1px solid var(--border);
+      transition: background 180ms ease;
+    }
+
+    .step:last-child {
+      border-right: 0;
+    }
+
+    .step:hover {
+      background: #f0f5e6;
+    }
+
+    .step-number {
+      display: block;
+      margin-bottom: 5px;
+      color: #8c9d77;
+      font-size: 9px;
+      font-weight: 700;
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .step-description {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      line-height: 1.6;
+    }
+
+    /* КАБИНЕТТЕР */
+
+    .spaces {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .space-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 0;
+      padding: 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      transition:
+        border-color 180ms ease,
+        box-shadow 180ms ease,
+        transform 180ms ease;
+    }
+
+    .space-card:hover {
+      border-color: #b8c7a7;
+      box-shadow: 0 10px 24px rgba(23, 62, 54, 0.06);
+      transform: translateY(-3px);
+    }
+
+    .space-icon {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      color: var(--green);
+      background: #edf2e2;
+      border-radius: 10px;
+      font-size: 21px;
+      line-height: 1;
+    }
+
+    .space-card:nth-child(2) .space-icon {
+      color: #946845;
+      background: #f5ecdf;
+    }
+
+    .space-card:nth-child(3) .space-icon {
+      color: #836476;
+      background: #f2eaf0;
+    }
+
+    .space-card h3 {
+      margin: 12px 0 6px;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .space-card p {
+      flex: 1;
+      margin: 0 0 13px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+    .space-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .space-link::after {
+      content: "↗";
+      transition: transform 180ms ease;
+    }
+
+    .space-card:hover .space-link::after {
+      transform: translate(2px, -2px);
+    }
+
+    /* ТӨМЕНГІ ЖОЛ */
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 32px;
+      color: #8b978e;
+      border-top: 1px solid var(--border);
+      font-size: 9px;
+    }
+
+    /* ПЛАНШЕТ */
+
+    @media (max-width: 1150px) {
+      :root {
+        --sidebar-width: 220px;
+      }
+
+      .sidebar {
+        padding-right: 13px;
+        padding-left: 13px;
+      }
+
+      .brand-name {
+        font-size: 18px;
+      }
+
+      .brand-caption {
+        font-size: 8px;
+      }
+
+      .nav-link {
+        padding: 10px;
+        font-size: 11px;
+      }
+
+      main {
+        padding: 22px;
+      }
+
+      .topbar,
+      .footer {
+        padding-right: 22px;
+        padding-left: 22px;
+      }
+
+      .hero-copy {
+        padding: 24px 0 24px 24px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+        letter-spacing: -1.2px;
+      }
+
+      .hero-actions {
+        gap: 8px;
+      }
+
+      .button {
+        padding: 10px 12px;
+        font-size: 10px;
+      }
+
+      .theatre-art {
+        margin: 16px;
+      }
+
+      .step {
+        padding: 12px 10px;
+      }
+
+      .step strong {
+        font-size: 11px;
+      }
+
+      .space-card {
+        padding: 15px;
+      }
+    }
+
+    /* ТЕЛЕФОН: БАРЛЫҚ 8 БӨЛІМ БІРДЕН КӨРІНЕДІ */
+
+    @media (max-width: 800px) {
+      .sidebar {
+        position: sticky;
+        inset: 0 0 auto;
+        width: 100%;
+        padding: 11px 14px 10px;
+        overflow: visible;
+        background: rgba(252, 253, 248, 0.97);
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+      }
+
+      .brand {
+        gap: 9px;
+        padding: 0;
+      }
+
+      .brand-mark {
+        width: 33px;
+        height: 33px;
+        border-radius: 10px;
+        font-size: 31px;
+      }
+
+      .brand-name {
+        font-size: 18px;
+      }
+
+      .brand-caption {
+        margin-top: 0;
+        font-size: 8px;
+      }
+
+      .nav-label,
+      .sidebar-note,
+      .author {
+        display: none;
+      }
+
+      .navigation {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 5px;
+        margin-top: 11px;
+      }
+
+      .nav-link {
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        min-height: 51px;
+        padding: 7px 3px;
+        border-radius: 9px;
+        font-size: 9px;
+        line-height: 1.3;
+        text-align: center;
+      }
+
+      .nav-icon {
+        width: auto;
+        font-size: 17px;
+      }
+
+      .shell {
+        margin-left: 0;
+      }
+
+      .topbar {
+        display: none;
+      }
+
+      main {
+        padding: 19px 15px 24px;
+      }
+
+      .page-heading {
+        margin-bottom: 16px;
+      }
+
+      .eyebrow {
+        font-size: 8px;
+        letter-spacing: 1.2px;
+      }
+
+      .page-title {
+        font-size: 20px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 0;
+        border-radius: 19px;
+      }
+
+      .hero-copy {
+        padding: 25px 23px 23px;
+      }
+
+      .hero h1 {
+        margin-top: 16px;
+        font-size: clamp(32px, 8.7vw, 46px);
+        letter-spacing: -1.4px;
+      }
+
+      .hero-description {
+        max-width: none;
+        font-size: 12px;
+      }
+
+      .hero-actions {
+        margin-top: 19px;
+      }
+
+      .button {
+        min-height: 43px;
+        padding: 11px 14px;
+        font-size: 11px;
+      }
+
+      .theatre-art {
+        margin: 0 17px 18px;
+        border-radius: 14px;
+      }
+
+      .theatre-art figcaption {
+        padding: 32px 15px 14px;
+      }
+
+      .theatre-art figcaption strong {
+        font-size: 13px;
+      }
+
+      .section-heading {
+        margin-top: 22px;
+      }
+
+      .section-heading h2 {
+        font-size: 16px;
+      }
+
+      .section-heading > span {
+        font-size: 8px;
+        white-space: nowrap;
+      }
+
+      .steps {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+      }
+
+      .step {
+        grid-column: span 2;
+        padding: 13px 11px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .step:nth-child(3) {
+        border-right: 0;
+      }
+
+      .step:nth-child(4),
+      .step:nth-child(5) {
+        grid-column: span 3;
+        border-bottom: 0;
+      }
+
+      .step strong {
+        font-size: 11px;
+      }
+
+      .step-description {
+        font-size: 9px;
+      }
+
+      .spaces {
+        grid-template-columns: 1fr;
+        gap: 11px;
+        margin-top: 15px;
+      }
+
+      .space-card {
+        display: grid;
+        grid-template-columns: 38px 1fr;
+        gap: 0 13px;
+        align-items: start;
+        padding: 17px;
+      }
+
+      .space-icon {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        margin-top: 2px;
+      }
+
+      .space-card h3 {
+        grid-column: 2;
+        margin: 0 0 5px;
+        font-size: 14px;
+      }
+
+      .space-card p {
+        grid-column: 2;
+        margin-bottom: 9px;
+      }
+
+      .space-link {
+        grid-column: 2;
+      }
+
+      .footer {
+        flex-direction: column;
+        gap: 4px;
+        padding: 15px;
+        font-size: 8px;
+      }
+    }
+
+    /* ҚОЗҒАЛЫСТЫ АЗАЙТУ БАПТАУЫН ҚОЛДАУ */
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">
+    Негізгі мазмұнға өту
+  </a>
+
+  <!-- НАВИГАЦИЯ -->
+  <aside class="sidebar">
+    <a
+      class="brand"
+      href="index.html"
+      aria-label="ERKETAI AI — басты бет"
+    >
+      <span class="brand-mark" aria-hidden="true">е</span>
+
+      <span>
+        <span class="brand-name">
+          ERKETAI <span class="brand-ai">AI</span>
+        </span>
+
+        <span class="brand-caption">
+          Қуыршақтан еркін сөйлеуге
+        </span>
+      </span>
+    </a>
+
+    <div class="nav-label">
+      МЕНІҢ КЕҢІСТІГІМ
+    </div>
+
+    <nav class="navigation" aria-label="Негізгі навигация">
+      <a
+        class="nav-link"
+        href="index.html"
+        aria-current="page"
+      >
+        <span class="nav-icon" aria-hidden="true">⌂</span>
+        <span>Басты бет</span>
+      </a>
+
+      <a class="nav-link" href="student.html">
+        <span class="nav-icon" aria-hidden="true">◈</span>
+        <span>Оқушы кеңістігі</span>
+      </a>
+
+      <a class="nav-link" href="plays.html">
+        <span class="nav-icon" aria-hidden="true">▣</span>
+        <span>Қойылымдар</span>
+      </a>
+
+      <a class="nav-link" href="ai.html">
+        <span class="nav-icon" aria-hidden="true">✦</span>
+        <span>ЖИ шеберханасы</span>
+      </a>
+
+      <a class="nav-link" href="teacher.html">
+        <span class="nav-icon" aria-hidden="true">▤</span>
+        <span>Мұғалім кабинеті</span>
+      </a>
+
+      <a class="nav-link" href="parents.html">
+        <span class="nav-icon" aria-hidden="true">♡</span>
+        <span>Ата-анаға</span>
+      </a>
+
+      <a class="nav-link" href="results.html">
+        <span class="nav-icon" aria-hidden="true">▥</span>
+        <span>Нәтижелер</span>
+      </a>
+
+      <a class="nav-link" href="media.html">
+        <span class="nav-icon" aria-hidden="true">▷</span>
+        <span>Театр мұрағаты</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-note">
+      <span class="sidebar-note-icon" aria-hidden="true">✦</span>
+      <strong>Әр дауыс — ерекше.</strong>
+      <p>Кішкентай қадамнан баста.</p>
+    </div>
+
+    <div class="author">
+      Жоба авторы
+      <strong>Казиханова Әсел Ескендірқызы</strong>
+      Қазақ тілі мен әдебиеті · Алатау қаласы
+    </div>
+  </aside>
+
+  <div class="shell">
+    <!-- ЖОҒАРҒЫ ЖОЛ -->
+    <header class="topbar">
+      <span class="topbar-caption">
+        ТІЛ · ТЕАТР · ТҰЛҒА
+      </span>
+
+      <div class="topbar-right">
+        <span class="grade">5-сынып</span>
+        <span class="avatar" aria-hidden="true">Е</span>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="page-heading">
+        <div>
+          <span class="eyebrow">
+            ERKETAI / ОҚУ КЕҢІСТІГІ
+          </span>
+
+          <h2 class="page-title">Басты бет</h2>
+        </div>
+
+        <span class="page-number">01 / 08</span>
+      </div>
+
+      <!-- СУРЕТІ БАР БАСТЫ БЛОК -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="hero-label">
+            ҚАЗАҚ ТІЛІ · 5-СЫНЫП
+          </span>
+
+          <h1 id="hero-title">
+            Кішкентай сахна.<br>
+            <em>Үлкен сенім.</em>
+          </h1>
+
+          <p class="hero-description">
+            Кейіпкерді таңда. Ойыңды құрастыр.<br>
+            Қуыршақ театры арқылы өз даусыңмен<br>
+            еркін сөйлеуді үйрен.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="student.html">
+              Жаттығуды бастау
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="plays.html"
+            >
+              Қойылым таңдау
+            </a>
+          </div>
+        </div>
+
+        <figure class="theatre-art">
+          <img
+            src="assets/erketai-theatre.png"
+            alt="Қазақы өрнекті қуыршақ театрындағы Қызыл телпек пен тиін"
+            width="1536"
+            height="1024"
+            fetchpriority="high"
+            decoding="async"
+          >
+
+          <figcaption>
+            <span class="theatre-art-label">
+              ERKETAI ТЕАТРЫ
+            </span>
+
+            <strong>
+              Әр кейіпкердің өз даусы бар.
+            </strong>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ERKETAI 5Q -->
+      <section aria-labelledby="steps-title">
+        <div class="section-heading">
+          <h2 id="steps-title">
+            Еркін сөйлеуге 5 қадам
+          </h2>
+
+          <span>ERKETAI 5Q әдісі</span>
+        </div>
+
+        <div class="steps">
+          <a class="step" href="teacher.html">
+            <span class="step-number">01</span>
+            <strong>Қиындық</strong>
+            <span class="step-description">
+              Қолдау бағытын тап
+            </span>
+          </a>
+
+          <a class="step" href="plays.html">
+            <span class="step-number">02</span>
+            <strong>Қуыршақ</strong>
+            <span class="step-description">
+              Кейіпкеріңді таңда
+            </span>
+          </a>
+
+          <a class="step" href="ai.html">
+            <span class="step-number">03</span>
+            <strong>Құрастыру</strong>
+            <span class="step-description">
+              Ойыңды жинақта
+            </span>
+          </a>
+
+          <a class="step" href="student.html">
+            <span class="step-number">04</span>
+            <strong>Қойылым</strong>
+            <span class="step-description">
+              Диалогке қосыл
+            </span>
+          </a>
+
+          <a class="step" href="results.html">
+            <span class="step-number">05</span>
+            <strong>Қорытынды</strong>
+            <span class="step-description">
+              Өзгерісті байқа
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ҮШ ЖҰМЫС КЕҢІСТІГІ -->
+      <section class="spaces" aria-label="Жұмыс кеңістіктері">
+        <a class="space-card" href="student.html">
+          <span class="space-icon" aria-hidden="true">◈</span>
+
+          <h3>Оқушыға</h3>
+
+          <p>
+            Кейіпкер таңда, рөлдік диалогке қатыс
+            және өз ойыңды жеткізіп үйрен.
+          </p>
+
+          <span class="space-link">
+            Жаттығуға өту
+          </span>
+        </a>
+
+        <a class="space-card" href="teacher.html">
+          <span class="space-icon" aria-hidden="true">▤</span>
+
+          <h3>Мұғалімге</h3>
+
+          <p>
+            Сөйлеу қиындығын анықта, тапсырма таңда
+            және оқушының ілгерілеуін бағала.
+          </p>
+
+          <span class="space-link">
+            Кабинетті ашу
+          </span>
+        </a>
+
+        <a class="space-card" href="parents.html">
+          <span class="space-icon" aria-hidden="true">♡</span>
+
+          <h3>Ата-анаға</h3>
+
+          <p>
+            Үйдегі қысқа әңгімелер мен жылы қолдау
+            арқылы балаға сенімділік сыйла.
+          </p>
+
+          <span class="space-link">
+            Ұсыныстарды қарау
+          </span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>
+        ERKETAI AI · Қазақ тілі мен әдебиеті · Алатау қаласы
+      </span>
+
+      <span>
+        Өз ойың. Өз даусың.
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
